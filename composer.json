@@ -1,0 +1,87 @@
+{
+    "name": "laranail/license-verifier-ui-preset",
+    "description": "Blade, Filament, Livewire and Vue scaffolding presets for laranail/license-verifier-ui.",
+    "keywords": ["laravel", "licensing", "scaffolding", "preset", "blade", "filament", "livewire", "vue"],
+    "homepage": "https://opensource.simtabi.com/products/laranail/license-verifier-ui-preset",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Imani Manyara",
+            "email": "imani@simtabi.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/laranail/license-verifier-ui-preset/issues",
+        "source": "https://github.com/laranail/license-verifier-ui-preset",
+        "docs": "https://opensource.simtabi.com/documentation/laranail/license-verifier-ui-preset/"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/laranail/license-verifier-ui"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/laranail/license-verifier"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/laranail/package-tools"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/laranail/console"
+        }
+    ],
+    "require": {
+        "php": "^8.4.1 || ^8.5",
+        "illuminate/http": "^13.0",
+        "illuminate/support": "^13.0",
+        "laranail/license-verifier-ui": "^0.1"
+    },
+    "require-dev": {
+        "filament/filament": "^4.0 || ^3.2",
+        "laravel/pint": "^1.18",
+        "livewire/livewire": "^3.5",
+        "orchestra/testbench": "^11.1",
+        "pestphp/pest": "^4.6"
+    },
+    "suggest": {
+        "filament/filament": "Required only by the Filament preset (^4.0 || ^3.2).",
+        "livewire/livewire": "Required only by the Livewire preset (^3.5)."
+    },
+    "autoload": {
+        "psr-4": {
+            "Simtabi\\Laranail\\Licence\\Verifier\\Presets\\Blade\\": "src/Blade/",
+            "Simtabi\\Laranail\\Licence\\Verifier\\Presets\\Filament\\": "src/Filament/",
+            "Simtabi\\Laranail\\Licence\\Verifier\\Presets\\Livewire\\": "src/Livewire/",
+            "Simtabi\\Laranail\\Licence\\Verifier\\Presets\\Vue\\": "src/Vue/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Simtabi\\Laranail\\Licence\\Verifier\\Presets\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "0.1.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Simtabi\\Laranail\\Licence\\Verifier\\Presets\\Blade\\Providers\\BladeServiceProvider",
+                "Simtabi\\Laranail\\Licence\\Verifier\\Presets\\Filament\\Providers\\FilamentServiceProvider",
+                "Simtabi\\Laranail\\Licence\\Verifier\\Presets\\Livewire\\Providers\\LivewireServiceProvider",
+                "Simtabi\\Laranail\\Licence\\Verifier\\Presets\\Vue\\Providers\\VueServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        },
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
