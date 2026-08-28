@@ -1,7 +1,16 @@
 {
     "name": "laranail/license-verifier-ui-preset",
     "description": "Blade, Filament, Livewire and Vue scaffolding presets for laranail/license-verifier-ui.",
-    "keywords": ["laravel", "licensing", "scaffolding", "preset", "blade", "filament", "livewire", "vue"],
+    "keywords": [
+        "laravel",
+        "licensing",
+        "scaffolding",
+        "preset",
+        "blade",
+        "filament",
+        "livewire",
+        "vue"
+    ],
     "homepage": "https://opensource.simtabi.com/products/laranail/license-verifier-ui-preset",
     "license": "MIT",
     "authors": [
@@ -83,5 +92,13 @@
         "sort-packages": true
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "scripts": {
+        "pint": "vendor/bin/pint --test --config vendor/laranail/package-tools/pint.json",
+        "pint-fix": "vendor/bin/pint --parallel --config vendor/laranail/package-tools/pint.json",
+        "format": "@pint-fix",
+        "lint": [
+            "@pint"
+        ]
+    }
 }
