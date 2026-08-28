@@ -63,7 +63,8 @@
         "laravel/pint": "^1.18",
         "livewire/livewire": "^3.5",
         "orchestra/testbench": "^11.1",
-        "pestphp/pest": "^4.6"
+        "pestphp/pest": "^4.6",
+        "laranail/package-tools": "^0.1"
     },
     "suggest": {
         "filament/filament": "Required only by the Filament preset (^4.0 || ^3.2).",
