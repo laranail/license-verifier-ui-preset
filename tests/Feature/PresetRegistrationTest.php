@@ -37,7 +37,7 @@ it('resolves a stubs directory that exists, for every preset', function (): void
 it('finds every stub named in a preset file map', function (): void {
     foreach (app(PresetRegistry::class)->all() as $definition) {
         foreach (array_keys($definition->fileMap) as $stub) {
-            expect($definition->stubsPath . '/' . $stub)
+            expect($definition->stubsPath.'/'.$stub)
                 ->toBeFile("{$definition->key}: {$stub} is mapped but not shipped");
         }
     }
