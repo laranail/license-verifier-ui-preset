@@ -60,7 +60,7 @@
     },
     "require-dev": {
         "filament/filament": "^4.0 || ^3.2",
-        "laravel/pint": "^1.18",
+        "laravel/pint": "^1.30",
         "livewire/livewire": "^3.5",
         "orchestra/testbench": "^11.1",
         "pestphp/pest": "^4.6",
