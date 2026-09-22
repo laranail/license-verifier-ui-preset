@@ -1,9 +1,10 @@
 # laranail/license-verifier-ui-preset
 
-[![Packagist](https://img.shields.io/packagist/v/laranail/license-verifier-ui-preset.svg)](https://packagist.org/packages/laranail/license-verifier-ui-preset)
 [![Tests](https://github.com/laranail/license-verifier-ui-preset/actions/workflows/tests.yml/badge.svg)](https://github.com/laranail/license-verifier-ui-preset/actions/workflows/tests.yml)
 [![Static analysis](https://github.com/laranail/license-verifier-ui-preset/actions/workflows/static-analysis.yml/badge.svg)](https://github.com/laranail/license-verifier-ui-preset/actions/workflows/static-analysis.yml)
 [![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
+`laranail/license-verifier-ui-preset` is not published to Packagist, so there is no registry-version badge to show — see [Install](#install).
 
 > Blade, Filament, Livewire and Vue scaffolding presets for `laranail/license-verifier-ui`.
 
