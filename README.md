@@ -19,6 +19,15 @@ composer require laranail/license-verifier-ui-preset
 
 All four presets register themselves. Nothing is enabled until you scaffold with one.
 
+## Quick start
+
+```bash
+php artisan laranail::license-verifier-ui.list
+php artisan laranail::license-verifier-ui.install blade
+```
+
+The full walkthrough is in [Presets](docs/tools/presets.md); everything else is in the [documentation index](#documentation).
+
 ## <a name="documentation"></a>Documentation
 
 Full documentation is at
