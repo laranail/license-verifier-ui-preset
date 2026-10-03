@@ -19,11 +19,29 @@ composer require laranail/license-verifier-ui-preset
 
 All four presets register themselves. Nothing is enabled until you scaffold with one.
 
-## Quick start
+## Quick start guide and usage
+
+### Getting started
+
+1. The `blade` and `vue` presets need nothing beyond Laravel. The other two need their stack, which
+   is suggested rather than required: `livewire/livewire ^3.5` for `livewire`, and
+   `filament/filament ^4.0 || ^3.2` for `filament`.
+2. Check the generator before scaffolding:
+
+   ```bash
+   php artisan laranail::license-verifier-ui.doctor
+   ```
+
+### Usage
 
 ```bash
 php artisan laranail::license-verifier-ui.list
 php artisan laranail::license-verifier-ui.install blade
+```
+
+```php
+app(PresetRegistry::class)->keys();   // ['blade', 'filament', 'livewire', 'vue']
+app(PresetRegistry::class)->get('blade')->stubsPath;
 ```
 
 The full walkthrough is in [Presets](docs/tools/presets.md); everything else is in the [documentation index](#documentation).
