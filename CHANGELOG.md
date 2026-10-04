@@ -5,8 +5,7 @@ All notable changes to `laranail/license-verifier-ui-preset` are documented in t
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## Unreleased
-
+## [Unreleased]
 _Nothing yet._
 
 ## v0.1.0
@@ -34,3 +33,5 @@ _Nothing yet._
 - **Generated packages require this package.** Each `PresetDefinition` named
   `laranail/license-verifier-ui-<stack>` as the base a scaffolded package requires. Those names are
   retired, so they now name this one.
+
+[Unreleased]: https://github.com/laranail/license-verifier-ui-preset/compare/v0.1.0...HEAD
