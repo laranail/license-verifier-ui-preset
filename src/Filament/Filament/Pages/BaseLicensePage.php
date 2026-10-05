@@ -73,6 +73,6 @@ abstract class BaseLicensePage extends Page
     private function dispatchLicenseUpdated(bool $valid): void
     {
         $this->dispatch(self::LICENSE_UPDATED_EVENT, valid: $valid);
-        $this->dispatch(self::LEGACY_LICENSE_UPDATED_EVENT, valid: $valid);
+        $this->dispatch(self::LEGACY_LICENSE_UPDATED_EVENT, valid: $valid); // @phpstan-ignore classConstant.deprecated
     }
 }
