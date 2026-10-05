@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- `illuminate/contracts` is now declared in `require` at `^13.0`. `src/` imports it, and it was only arriving transitively.
 - **A package generated from these presets now names its routes `laranail-license-verifier-ui.*`**
   (Blade) or `laranail-license-verifier-ui-vue.*` (Vue). The prefix comes from
   `laranail/license-verifier-ui`'s generator, which now vendor-scopes it; this package's stubs
