@@ -40,6 +40,17 @@ package root. It was `2` when each preset was its own package and the provider s
 — see [architecture](../architecture.md#what-the-merge-had-to-get-right) for why that failure is
 invisible until somebody scaffolds.
 
+## Route names
+
+The `blade` and `vue` stubs name their routes with the `$ROUTE_NAME_PREFIX$` token, which
+`laranail/license-verifier-ui`'s generator fills in. A newly generated package gets
+`laranail-license-verifier-ui.` (Blade) or `laranail-license-verifier-ui-vue.` (Vue), written into
+its own `routes.name` config and views.
+
+A package generated before 2026-10 carries `license-verifier.` or `license-verifier-vue.` instead.
+The base providers fall back to those prefixes when `routes.name` is unset, so such a package keeps
+its route names until it is regenerated.
+
 ## Adding a preset
 
 1. Add `src/<Stack>/Presets/<Stack>PresetDefinition.php` returning a `PresetDefinition`, with
