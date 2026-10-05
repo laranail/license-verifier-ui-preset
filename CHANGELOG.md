@@ -6,7 +6,15 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-_Nothing yet._
+
+### Changed
+
+- **A package generated from these presets now names its routes `laranail-license-verifier-ui.*`**
+  (Blade) or `laranail-license-verifier-ui-vue.*` (Vue). The prefix comes from
+  `laranail/license-verifier-ui`'s generator, which now vendor-scopes it; this package's stubs
+  read it through `$ROUTE_NAME_PREFIX$` and needed no change. The base providers' fallback stays
+  `license-verifier.` / `license-verifier-vue.`, so a package generated earlier, which carries the
+  old prefix in its own config and views, keeps its route names.
 
 ## v0.1.0
 
