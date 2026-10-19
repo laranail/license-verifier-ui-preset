@@ -65,7 +65,7 @@
         "livewire/livewire": "^3.5",
         "orchestra/testbench": "^11.1",
         "pestphp/pest": "^5.1",
-        "laranail/package-tools": "^0.1"
+        "laranail/package-tools": "^0.1.10"
     },
     "suggest": {
         "filament/filament": "Required only by the Filament preset (^4.0 || ^3.2).",

@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- A guard now keeps literal credentials out of the tests, and keeps every generated credential's
+  purpose a single word, because secret scanners cannot tell a test password from a leaked one.
+  `laranail/package-tools`, which ships it, is now required at `^0.1.10`.
 - The Filament licence page dispatches its browser event as `laranail-license-verifier-ui:license-updated` (`BaseLicensePage::LICENSE_UPDATED_EVENT`). The bare `license-updated` is still sent beside it and is deprecated (`LEGACY_LICENSE_UPDATED_EVENT`), removed no earlier than the next minor after 0.1. Listen for the scoped name.
 - `illuminate/contracts` is now declared in `require` at `^13.0`. `src/` imports it, and it was only arriving transitively.
 - **A package generated from these presets now names its routes `laranail-license-verifier-ui.*`**
